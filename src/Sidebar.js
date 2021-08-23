@@ -1,3 +1,6 @@
+import Links from './Links';
+import Copyright from './Copyright';
+
 const sidebar_data = [
   {
     user:"catanacomics",
@@ -68,13 +71,8 @@ export default function Sidebar(){
             {sidebar_data[0].sugestions.map((sugestion)=> <Sugestion img={sugestion.sugest_img} user={sugestion.sugest_user} followStatus={sugestion.follow_status} />)}
           </div>
 
-          <div class="links">
-            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-          </div>
-
-          <div class="copyright">
-            © 2021 INSTAGRAM DO FACEBOOK
-          </div>
+          <Links />
+          <Copyright />
         </div>
     );
 }
