@@ -1,6 +1,6 @@
 export default function Copyright(){
     return (
-        <div class="copyright">
+        <div className="copyright">
             © 2021 INSTAGRAM DO FACEBOOK
         </div>
     );

@@ -28,24 +28,24 @@ const sugestions_data = [
 
 const Sugestion = (props) => {
     return (
-      <div class="sugestao">
-        <div class="usuario">
+      <div className="sugestao">
+        <div className="usuario">
           <img src={props.img} />
-          <div class="texto">
-            <div class="nome">{props.user}</div>
-            <div class="razao">{props.followStatus}</div>
+          <div className="texto">
+            <div className="nome">{props.user}</div>
+            <div className="razao">{props.followStatus}</div>
           </div>
         </div>
   
-        <div class="seguir">Seguir</div>
+        <div className="seguir">Seguir</div>
       </div>
     );
   }
 
 export default function Sugestions(){
     return (
-        <div class="sugestoes">
-        <div class="titulo">
+        <div className="sugestoes">
+        <div className="titulo">
           Sugestões para você
           <div>Ver tudo</div>
         </div>

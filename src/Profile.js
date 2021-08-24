@@ -9,9 +9,9 @@ const profile_data = [
 
 export default function Profile(){
     return (
-        <div class="usuario">
+        <div className="usuario">
             <img src={profile_data[0].user_img} />
-            <div class="texto">
+            <div className="texto">
               <strong>{profile_data[0].user}</strong>
               {profile_data[0].user_nick}
             </div>

@@ -19,23 +19,23 @@ const posts_data = [
 
 const Post = (props) => {
   return (
-    <div class="post">
-    <div class="topo">
-      <div class="usuario">
+    <div className="post">
+    <div className="topo">
+      <div className="usuario">
         <img src={props.user_img} />
         {props.user}
       </div>
-      <div class="acoes">
+      <div className="acoes">
         <ion-icon name="ellipsis-horizontal"></ion-icon>
       </div>
     </div>
 
-    <div class="conteudo">
+    <div className="conteudo">
       <img src={props.content} />
     </div>
 
-    <div class="fundo">
-      <div class="acoes">
+    <div className="fundo">
+      <div className="acoes">
         <div>
           <ion-icon name="heart-outline"></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
@@ -46,9 +46,9 @@ const Post = (props) => {
         </div>
       </div>
 
-      <div class="curtidas">
+      <div className="curtidas">
         <img src={props.like_img} />
-        <div class="texto">
+        <div className="texto">
           Curtido por <strong>{props.like_user}</strong> e <strong>outras {props.other_likes} pessoas</strong>
         </div>
       </div>
@@ -59,7 +59,7 @@ const Post = (props) => {
 
 export default function Posts(){
     return (
-      <div class="posts">
+      <div className="posts">
           {posts_data.map((elem, index)=> <Post 
             key = {index}
             user_img = {elem.user_img} 

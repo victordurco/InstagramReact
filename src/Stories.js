@@ -35,11 +35,11 @@ const stories_data = [
 
 const Storie = (props) => {
   return(
-    <div class="story">
-        <div class="imagem">
+    <div className="story">
+        <div className="imagem">
           <img src={props.img} />
         </div>
-        <div class="usuario">
+        <div className="usuario">
           {props.user}
         </div>
       </div>
@@ -48,13 +48,13 @@ const Storie = (props) => {
 
 export default function Stories(){
     return (
-        <div class="stories">
+        <div className="stories">
             {stories_data.map((storie_data, index) => <Storie
               key = {index}
               img = {storie_data.img} 
               user = {storie_data.user}
             />)}
-            <div class="setinha">
+            <div className="setinha">
               <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>

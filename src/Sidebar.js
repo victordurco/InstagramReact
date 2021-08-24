@@ -14,7 +14,7 @@ const sidebar_data = [
 
 export default function Sidebar(){
     return(
-        <div class="sidebar">
+        <div className="sidebar">
           <Profile />
           <Sugestions />
           <Links />
