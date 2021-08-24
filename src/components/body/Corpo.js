@@ -1,6 +1,6 @@
 import Stories from './Stories';
 import Posts from './Posts';
-import Sidebar from './Sidebar';
+import Sidebar from '../sidebar/Sidebar'
 
 export default function Corpo(){
     return(
