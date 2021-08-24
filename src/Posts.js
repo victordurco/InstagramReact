@@ -60,7 +60,15 @@ const Post = (props) => {
 export default function Posts(){
     return (
       <div class="posts">
-          {posts_data.map((elem)=><Post user_img={elem.user_img} user={elem.user} content={elem.content} like_img={elem.like_img} like_user={elem.like_user} other_likes={elem.other_likes} />)} 
+          {posts_data.map((elem, index)=> <Post 
+            key = {index}
+            user_img = {elem.user_img} 
+            user = {elem.user} 
+            content = {elem.content} 
+            like_img = {elem.like_img} 
+            like_user = {elem.like_user} 
+            other_likes = {elem.other_likes} 
+          />)} 
       </div>
     );
 }

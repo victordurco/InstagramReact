@@ -41,7 +41,7 @@ const Sugestion = (props) => {
       </div>
     );
   }
-  
+
 export default function Sugestions(){
     return (
         <div class="sugestoes">
@@ -49,7 +49,7 @@ export default function Sugestions(){
           Sugestões para você
           <div>Ver tudo</div>
         </div>
-        {sugestions_data.map((sugestion)=> <Sugestion img={sugestion.sugest_img} user={sugestion.sugest_user} followStatus={sugestion.follow_status} />)}
+        {sugestions_data.map((sugestion, index)=> <Sugestion key={index} img={sugestion.sugest_img} user={sugestion.sugest_user} followStatus={sugestion.follow_status} />)}
       </div>
     );
 }

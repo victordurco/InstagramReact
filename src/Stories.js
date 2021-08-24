@@ -49,7 +49,11 @@ const Storie = (props) => {
 export default function Stories(){
     return (
         <div class="stories">
-            {stories_data.map(storie_data => <Storie img={storie_data.img} user={storie_data.user}/>)}
+            {stories_data.map((storie_data, index) => <Storie
+              key = {index}
+              img = {storie_data.img} 
+              user = {storie_data.user}
+            />)}
             <div class="setinha">
               <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
